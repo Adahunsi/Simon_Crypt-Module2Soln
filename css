@@ -1,0 +1,115 @@
+*{
+	box-sizing: border-box;
+}
+div{
+	border: 1px solid black;
+	padding: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+h1{
+	text-align: center;
+}
+p{
+	width: 90px;
+	height: 20px;
+	border: 1px solid black;
+	float: right;
+	background: red;
+	margin-bottom: 10px;
+	margin-top: 0;
+	position: relative;
+	bottom: 11px;
+	left: 11px;
+	text-align: center;
+}
+#p1{
+	width: 90px;
+	height: 20px;
+	border: 1px solid black;
+	float: right;
+	background: red;
+	margin-bottom: 10px;
+	margin-top: 0;
+	position: relative;
+	bottom: 11px;
+	left: 11px;
+	text-align: center;
+}
+section{
+	clear: right;
+}
+#p2{
+	width: 70px;
+	height: 20px;
+	border: 1px solid black;
+	float: right;
+	background: pink;
+	margin-bottom: 10px;
+	margin-top: 0;
+	position: relative;
+	bottom: 11px;
+	left: 11px;
+	text-align: center;
+}
+
+#p3{
+	width: 70px;
+	height: 20px;
+	border: 1px solid black;
+	float: right;
+	background: yellow;
+	margin-bottom: 10px;
+	margin-top: 0;
+	position: relative;
+	bottom: 11px;
+	left: 11px;
+	text-align: center;
+}
+#div1{
+	background: seashell;
+}
+#div2{
+	background: seashell;
+}
+#div3{
+	background: goldenrod;
+}
+
+@media (min-width: 992px) {
+	div{
+		width: 30%;
+	float: left;
+	border: 1px solid black;
+	padding: 10px;
+	margin: 16px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	#div1, #div2 {
+		width: 46%;
+		float: left;
+		border: 1px solid black;
+		padding: 10px;
+		margin: 13px;
+	}
+	#div3 {
+		width: 95.2%;
+		float: left;
+		border: 1px solid black;
+		padding: 10px;
+		margin-top: 10px;
+		margin-right: 50px;
+		margin-left: 14px;
+	}
+}
+@media (max-width: 767px){
+	div{
+		width: 98%;
+		float: left;
+		border: 1px solid black;
+		padding: 10px;
+		margin: 10px;
+	}
+}
