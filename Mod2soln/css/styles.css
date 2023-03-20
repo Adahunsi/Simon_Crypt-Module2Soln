@@ -1,12 +1,29 @@
 *{
 	box-sizing: border-box;
 }
+
+.all{
+	width: 1320px;
+	height: 100%;
+	border: 0;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 0 auto;
+}
+body{
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
 div{
-	border: 1px solid black;
+	border: 2px solid black;
 	padding: 10px;
 	margin-right: auto;
 	margin-left: auto;
-	width: 90%;
+	max-width: 100%;
+	margin: 0 10px 0 10px;
 }
 h1{
 	text-align: center;
@@ -14,7 +31,7 @@ h1{
 p{
 	width: 90px;
 	height: 20px;
-	border: 1px solid black;
+	border: 2px solid black;
 	float: right;
 	background: red;
 	margin-bottom: 10px;
@@ -27,14 +44,14 @@ p{
 #p1{
 	width: 90px;
 	height: 20px;
-	border: 1px solid black;
+	border: 2px solid black;
 	float: right;
 	background: red;
 	margin-bottom: 10px;
 	margin-top: 0;
 	position: relative;
-	bottom: 11px;
-	left: 11px;
+	bottom: 12px;
+	left: 12px;
 	text-align: center;
 }
 section{
@@ -43,28 +60,28 @@ section{
 #p2{
 	width: 70px;
 	height: 20px;
-	border: 1px solid black;
+	border: 2px solid black;
 	float: right;
 	background: pink;
 	margin-bottom: 10px;
 	margin-top: 0;
 	position: relative;
-	bottom: 11px;
-	left: 11px;
+	bottom: 12px;
+	left: 12px;
 	text-align: center;
 }
 
 #p3{
 	width: 70px;
 	height: 20px;
-	border: 1px solid black;
+	border: 2px solid black;
 	float: right;
 	background: yellow;
 	margin-bottom: 10px;
 	margin-top: 0;
 	position: relative;
-	bottom: 11px;
-	left: 11px;
+	bottom: 12px;
+	left: 12px;
 	text-align: center;
 }
 #div1{
@@ -78,39 +95,30 @@ section{
 }
 
 @media (min-width: 992px) {
-	div{
-		width: 30%;
-	float: left;
-	border: 1px solid black;
-	padding: 10px;
-	margin: 16px;
-	height: 257px;
-	}
+	
 }
 @media (min-width: 768px) and (max-width: 991px) {
-	#div1, #div2 {
-		width: 46%;
-		float: left;
-		border: 1px solid black;
-		padding: 10px;
-		margin: 13px;
+	#div1, #div2{
+		max-width: 45%;
+		margin-bottom: 10px;
 	}
-	#div3 {
-		width: 95.2%;
-		float: left;
-		border: 1px solid black;
-		padding: 10px;
-		margin-top: 10px;
-		margin-right: 50px;
-		margin-left: 14px;
+	#div3{
+		max-width: 92%;
+	}
+	.all{
+		flex-wrap: wrap;
 	}
 }
+
 @media (max-width: 767px){
-	div{
-		width: 98%;
-		float: left;
-		border: 1px solid black;
-		padding: 10px;
-		margin: 10px;
+	#div1, #div2{
+		max-width: 90%;
+		margin-bottom: 10px;
+	}
+	#div3{
+		max-width: 90%;
+	}
+	.all{
+		flex-wrap: wrap;
 	}
 }
